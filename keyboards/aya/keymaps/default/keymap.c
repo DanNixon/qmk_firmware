@@ -63,12 +63,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                      _______, _______, _______, _______,    _______, _______, _______, _______
     ),
 };
-
-bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case _LC_SPC:
-            return true;
-        default:
-            return false;
-    }
-}
